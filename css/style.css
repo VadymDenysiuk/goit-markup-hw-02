@@ -141,7 +141,8 @@ body {
   line-height: 1.62;
   cursor: pointer;
 }
-.button-portfolio .btn:hover {
+.button-portfolio .btn:hover,
+.button-portfolio .btn:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
 }
