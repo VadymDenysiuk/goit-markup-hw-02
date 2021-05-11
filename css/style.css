@@ -73,11 +73,12 @@ body {
   line-height: 1.87;
   cursor: pointer;
 }
-.button-hero:hover,
+/* Пока не надо */
+/* .button-hero:hover,
 .button-hero:focus {
   color: var(--accent-color);
   background-color: white;
-}
+} */
 /*section*/
 .section .section-title {
   color: var(--title-text-color);
