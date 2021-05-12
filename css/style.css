@@ -4,16 +4,24 @@
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
   --secondary-bg-color: #2f303a;
+  --grey-bg-color: #f5f4fa;
+  --footer-text-color: rgba(255, 255, 255, 0.6);
 }
 
 ul {
   list-style: none;
+}
+.link {
+  text-decoration: none;
 }
 body {
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
   font-family: Roboto, Sans-Serif;
   letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.71;
+  font-weight: 400;
 }
 /*logo*/
 .logo {
@@ -27,28 +35,28 @@ body {
   color: var(--title-text-color);
 }
 /*header*/
-.site-nav a {
+.site-nav .link {
   color: var(--title-text-color);
   letter-spacing: 0.02em;
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
-  text-decoration: none;
 }
-.address-header a {
+.address-header .link {
   color: var(--primary-text-color);
   letter-spacing: 0.02em;
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
-  text-decoration: none;
 }
-.site-nav a:hover,
-.address a:hover,
-.site-nav a:focus,
-.address a:focus {
+.site-nav .link.current {
+  background-color: var(--accent-color);
+}
+.site-nav .link:hover,
+.address .link:hover,
+.site-nav .link:focus,
+.address .link:focus {
   color: var(--accent-color);
 }
+
 /*index*/
 
 /*hero*/
@@ -91,15 +99,14 @@ body {
   color: var(--title-text-color);
   font-size: 14px;
   line-height: 1.42;
+  text-transform: uppercase;
 }
-.features .text {
-  font-size: 14px;
-  line-height: 1.71;
-}
+/*.features .text {
+}*/
 
 /*team*/
 .section-team {
-  background-color: #f5f4fa;
+  background-color: var(--grey-bg-color);
 }
 .team .teammate {
   color: var(--title-text-color);
@@ -119,28 +126,29 @@ body {
   background-color: var(--secondary-bg-color);
 }
 .address-footer {
-  font-size: 14px;
-  line-height: 1.71;
   font-style: normal;
 }
 .address-footer .location,
 .logo-footer {
   color: var(--primary-white-color);
 }
-.address-footer a {
-  color: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
+.address-footer .link {
+  color: var(--footer-text-color);
 }
 
 /*portfolio*/
 .button-portfolio .btn {
-  font-family: inerhit;
-  background-color: #f5f4fa;
+  font-family: inherit;
+  background-color: var(--grey-bg-color);
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   cursor: pointer;
+}
+.button-portfolio .first-btn {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
 }
 .button-portfolio .btn:hover,
 .button-portfolio .btn:focus {
