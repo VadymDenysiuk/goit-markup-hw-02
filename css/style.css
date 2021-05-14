@@ -48,7 +48,7 @@ body {
   line-height: 1.14;
 }
 .site-nav .link.current {
-  background-color: var(--accent-color);
+  color: var(--accent-color);
 }
 .site-nav .link:hover,
 .address .link:hover,
@@ -80,6 +80,7 @@ body {
   font-size: 16px;
   line-height: 1.87;
   cursor: pointer;
+  border: none;
 }
 /* Пока не надо */
 /* .button-hero:hover,
@@ -145,6 +146,7 @@ body {
   font-size: 16px;
   line-height: 1.62;
   cursor: pointer;
+  border: none;
 }
 .button-portfolio .first-btn {
   background-color: var(--accent-color);
